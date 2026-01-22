@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardCraft - Project Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f8ff;
+            color: #333;
+            overflow: hidden;
+        }
+        
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(33, 150, 243, 0.1) 0%, rgba(33, 150, 243, 0.05) 100%);
+            clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+        
+        .slide-content {
+            position: relative;
+            z-index: 2;
+            padding: 80px;
+            height: 100%;
+        }
+        
+        .title {
+            font-size: 4em;
+            font-weight: 300;
+            color: #2196f3;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .content-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+            max-width: 900px;
+            position: relative;
+        }
+        
+        .content-box::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #2196f3, #21cbf3, #2196f3);
+            border-radius: 22px;
+            z-index: -1;
+        }
+        
+        .project-icon {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            font-size: 3em;
+            color: #2196f3;
+            opacity: 0.7;
+        }
+        
+        .bullet-point {
+            display: flex;
+            align-items: flex-start;
+            margin: 25px 0;
+            font-size: 1.3em;
+            line-height: 1.6;
+            color: #424242;
+        }
+        
+        .bullet-icon {
+            color: #2196f3;
+            font-size: 1.2em;
+            margin-right: 20px;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .bullet-text {
+            flex: 1;
+        }
+        
+        .highlight {
+            color: #1976d2;
+            font-weight: 600;
+        }
+        
+        .tech-highlight {
+            background: linear-gradient(45deg, #2196f3, #21cbf3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .decorative-corners {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #2196f3;
+        }
+        
+        .corner-tl {
+            top: 20px;
+            left: 20px;
+            border-right: none;
+            border-bottom: none;
+        }
+        
+        .corner-tr {
+            top: 20px;
+            right: 20px;
+            border-left: none;
+            border-bottom: none;
+        }
+        
+        .corner-bl {
+            bottom: 20px;
+            left: 20px;
+            border-right: none;
+            border-top: none;
+        }
+        
+        .corner-br {
+            bottom: 20px;
+            right: 20px;
+            border-left: none;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="slide-content">
+            <h1 class="title">Project details</h1>
+            
+            <div class="content-box">
+                <div class="decorative-corners corner-tl"></div>
+                <div class="decorative-corners corner-tr"></div>
+                <div class="decorative-corners corner-bl"></div>
+                <div class="decorative-corners corner-br"></div>
+                
+                <div class="project-icon">🎯</div>
+                
+                <div class="bullet-point">
+                    <div class="bullet-icon">▶</div>
+                    <div class="bullet-text">
+                        This project includes a complete <span class="highlight">Business Card Design Platform (CardCraft)</span> system.
+                    </div>
+                </div>
+                
+                <div class="bullet-point">
+                    <div class="bullet-icon">▶</div>
+                    <div class="bullet-text">
+                        Features like: <span class="highlight">User Authentication, Real-time Card Designer, Template Management, Admin Dashboard, and Payment Processing</span>.
+                    </div>
+                </div>
+                
+                <div class="bullet-point">
+                    <div class="bullet-icon">▶</div>
+                    <div class="bullet-text">
+                        All these features include functionality for <span class="highlight">user registration, premium subscriptions, template customization, live preview, and secure payment processing</span>.
+                    </div>
+                </div>
+                
+                <div class="bullet-point">
+                    <div class="bullet-icon">▶</div>
+                    <div class="bullet-text">
+                        There is also a comprehensive <span class="highlight">admin panel</span> where management of <span class="tech-highlight">users, templates, payments, and analytics</span> are included.
+                    </div>
+                </div>
+                
+                <div class="bullet-point">
+                    <div class="bullet-icon">▶</div>
+                    <div class="bullet-text">
+                        There is a <span class="highlight">premium subscription model</span> for advanced features and templates.
+                    </div>
+                </div>
+                
+                <div class="bullet-point">
+                    <div class="bullet-icon">▶</div>
+                    <div class="bullet-text">
+                        Built with modern technologies: <span class="tech-highlight">React + TypeScript + C# + SQL Server</span>...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
