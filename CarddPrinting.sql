@@ -19,48 +19,6 @@ CREATE TABLE Template_Category (
 	Created_at Datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     Updated_at Datetime NOT NULL
 );
-INSERT INTO Template_Category (Category_Name, Category_Description, Updated_at)
-VALUES 
-('Standard Business Card', 
- 'The most common type, usually rectangular (3.5 x 2 inches). Simple design with name, title, company, and contact details. Best For: Professionals who want a clean and classic look.',
- GETDATE()),
-
-('Premium / Luxury Business Card', 
- 'Made from high-quality materials (thick paper, textured stock, metal, or plastic). Often includes embossing, foil stamping, or spot UV. Best For: Making a strong impression in industries like law, finance, and luxury goods.',
- GETDATE()),
-
-('Minimalist Business Card', 
- 'Simple design with lots of white space, limited colors, and clean typography. Focuses on elegance and clarity. Best For: Designers, consultants, modern brands that value simplicity.',
- GETDATE()),
-
-('Creative / Custom Shaped Business Card', 
- 'Cards cut into unique shapes (circles, squares, folded cards, die-cut shapes like tools or products). Best For: Creative professionals, artists, and businesses wanting to stand out.',
- GETDATE()),
-
-('Folded Business Card', 
- 'Has a fold, giving extra space for details (like mini brochures). Can include services, portfolio samples, or a small calendar. Best For: Businesses that need to share more information.',
- GETDATE()),
-
-('Digital Business Card (NFC / QR Code)', 
- 'Contains a QR code or NFC chip that links to your website, portfolio, or contact info when scanned. Best For: Tech-savvy professionals, startups, and networking events.',
- GETDATE()),
-
-('Magnetic Business Card', 
- 'Printed on a magnet instead of paper, so people can stick it on fridges or boards. Best For: Local businesses like plumbers, electricians, or food delivery.',
- GETDATE()),
-
-('Transparent / Plastic Business Card', 
- 'Made from frosted, clear, or colored plastic. Durable and unique. Best For: Modern brands, tech companies, and design agencies.',
- GETDATE()),
-
-('Eco-Friendly Business Card', 
- 'Printed on recycled paper or seed paper (can be planted to grow plants). Shows sustainability commitment. Best For: Green businesses, NGOs, eco-conscious brands.',
- GETDATE()),
-
-('Photo Business Card', 
- 'Features a professional headshot or product photo. Helps people remember faces and brands. Best For: Realtors, photographers, personal branding.',
- GETDATE());
-
 
 -- Card template table
 CREATE TABLE Card_Template (
