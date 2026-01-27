@@ -42,9 +42,6 @@ CREATE TABLE Payment (
     Amount FLOAT NOT NULL,
     Payment_Date DATETIME NOT NULL
 );
-INSERT INTO Payment (User_id, Acount_Number, CVV_Number, Card_Expiry_Date, Amount, Payment_Date)
-VALUES (1, 1234567890123456, 123, '12/2027', 99.99, '2025-09-03 12:00:00');
-
 
 -- Review table
 CREATE TABLE Review (
@@ -56,14 +53,6 @@ CREATE TABLE Review (
     Created_At DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
--- Insert sample data into Review table
-INSERT INTO Review (User_Id, Template_Id, Rating, Comment)
-VALUES 
-(1, 1, 4, 'Excellent template! Very useful for my design.'),
-
-(2, 1, 3, 'Good template but needs a bit more customization options.');
-
-
 -- Contact us table
 CREATE TABLE Contact_Us (
     Contact_Id int IDENTITY(1,1) PRIMARY KEY,
@@ -73,12 +62,3 @@ CREATE TABLE Contact_Us (
     Message varchar(max) NOT NULL,
     Created_at DATETIME NOT NULL
 );
-
-select* from User_Detail
-INSERT INTO User_Detail (Username, Email, Password_hash, Is_premium, Is_admin)
-VALUES 
-('john_doe', 'john@example.com', 'hashed_password_1', 1, 0);
-
-INSERT INTO User_Detail (Username, Email, Password_hash, Is_premium, Is_admin)
-VALUES 
-('admin01', 'admin@example.com', 'hashed_password_2', 0, 1);
